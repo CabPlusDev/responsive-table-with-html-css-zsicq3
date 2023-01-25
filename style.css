@@ -1,0 +1,82 @@
+		.main>h2{
+      text-align: left;
+      color: black;
+			font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .table,
+		th,
+		td {
+			border: 1px solid #ddd;
+			padding: 10px 15px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		th {
+			font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			background-color: purple;
+			letter-spacing: 0.07em;
+			font-size: large;
+			color: white;
+			
+			
+		}
+
+		.table {
+			width: 100%;
+			border-collapse: collapse;
+			text-align: left;
+		}
+
+		@media(max-width: 500px) {
+			.table thead {
+				display: none !important;
+			}
+
+			.table tbody,
+			tr,
+			td {
+				display: block;
+				width: 100%;
+				float: right;
+			}
+
+			.table tr {
+				margin-bottom: 50px;
+			}
+
+			.table td {
+				text-align: right;
+				padding-left: 40%;
+			}
+
+			.table tr:nth-child(:first-child) {
+				text-align: center;
+			}
+
+			.table td::before {
+				content: attr(data-name);
+				position: absolute;
+				left: 0;
+				width: 50%;
+				text-align: left;
+				padding-left: 20px;
+				font-size: 1rem;
+				font-weight: bold;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			.logos {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 60%;
+			}
+
+			div.contract {
+				text-align: right;
+				line-height: 170%;
+				font-size: 15px;
+			}
+
+		}
